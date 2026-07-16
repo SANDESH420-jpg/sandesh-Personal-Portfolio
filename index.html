@@ -4,201 +4,366 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sandesh Chaudhary | Personal Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-    <h1>Sandesh Chaudhary</h1>
-
-    <nav>
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+<header class="site-header">
+    <div class="header-container">
+        <a href="#" class="logo">Sandesh Chaudhary</a>
+        
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#about" class="nav-link"><i data-lucide="user"></i> About</a></li>
+                <li><a href="#skills" class="nav-link"><i data-lucide="layers"></i> Skills</a></li>
+                <li><a href="#experience" class="nav-link"><i data-lucide="briefcase"></i> Experience</a></li>
+                <li><a href="#education" class="nav-link"><i data-lucide="graduation-cap"></i> Education</a></li>
+                <li><a href="#projects" class="nav-link"><i data-lucide="code-2"></i> Projects</a></li>
+                <li><a href="#contact" class="nav-link"><i data-lucide="mail"></i> Contact</a></li>
+            </ul>
+        </nav>
+        
+        <button class="menu-toggle" aria-label="Toggle navigation menu">
+            <i data-lucide="menu" id="menu-icon"></i>
+        </button>
+    </div>
 </header>
 
-<main>
+<main class="container">
 
-    <section id="about">
-        <h2>About Me</h2>
-
-        <figure>
-            <img src="images/profile.jpeg" alt="Profile photo of Sandesh Chaudhary" width="300" height="300">
-            <figcaption>Sandesh Chaudhary</figcaption>
-        </figure>
-
-        <p>
-            Hello! My name is <strong>Sandesh Chaudhary</strong>. I am currently
-            studying a Bachelor in Information Technology (BIT) at Model Institute
-            of Technology (MIT). I have experience as a Sales and Customer Service
-            Representative and enjoy building strong customer relationships,
-            solving problems, and learning modern web development technologies.
-            My goal is to become a skilled software developer while continuously
-            improving my technical and communication skills.
-        </p>
+    <section id="about" class="animate-on-scroll">
+        <div class="about-wrapper">
+            <div class="about-content">
+                <span class="section-tagline">Welcome to my space</span>
+                <h2>About Me</h2>
+                <p>
+                    Hello! My name is <strong>Sandesh Chaudhary</strong>. I am currently
+                    studying a Bachelor in Information Technology (BIT) at Model Institute
+                    of Technology (MIT). I have experience as a Sales and Customer Service
+                    Representative and enjoy building strong customer relationships,
+                    solving problems, and learning modern web development technologies.
+                    My goal is to become a skilled software developer while continuously
+                    improving my technical and communication skills.
+                </p>
+                <div class="about-cta">
+                    <a href="#contact" class="btn btn-primary">
+                        <span>Get In Touch</span>
+                        <i data-lucide="send"></i>
+                    </a>
+                    <a href="#projects" class="btn btn-secondary">
+                        <span>View Work</span>
+                        <i data-lucide="arrow-down"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="about-image-wrapper">
+                <figure class="profile-figure">
+                    <div class="profile-img-container">
+                        <img src="images/profile.jpeg" alt="Profile photo of Sandesh Chaudhary" width="300" height="300">
+                    </div>
+                    <figcaption><span class="status-dot"></span> Available for Opportunities</figcaption>
+                </figure>
+            </div>
+        </div>
     </section>
 
-    <section id="skills">
-        <h2>Technical Skills</h2>
+    <section id="skills" class="animate-on-scroll">
+        <div class="section-header">
+            <span class="section-tagline">What I do well</span>
+            <h2>Technical Skills</h2>
+        </div>
 
-        <dl>
-            <dt>Customer Relationship Management</dt>
-            <dd>Building and maintaining strong relationships with customers.</dd>
+        <dl class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-icon-box"><i data-lucide="users"></i></div>
+                <dt>Customer Relationship Management</dt>
+                <dd>Building and maintaining strong relationships with customers.</dd>
+            </div>
 
-            <dt>Customer Engagement</dt>
-            <dd>Communicating professionally to improve customer satisfaction.</dd>
+            <div class="skill-card">
+                <div class="skill-icon-box"><i data-lucide="message-square"></i></div>
+                <dt>Customer Engagement</dt>
+                <dd>Communicating professionally to improve customer satisfaction.</dd>
+            </div>
 
-            <dt>Sales Strategy Development</dt>
-            <dd>Supporting business growth through effective sales techniques.</dd>
+            <div class="skill-card">
+                <div class="skill-icon-box"><i data-lucide="trending-up"></i></div>
+                <dt>Sales Strategy Development</dt>
+                <dd>Supporting business growth through effective sales techniques.</dd>
+            </div>
 
-            <dt>Product Knowledge</dt>
-            <dd>Providing accurate information about products and services.</dd>
+            <div class="skill-card">
+                <div class="skill-icon-box"><i data-lucide="book-open"></i></div>
+                <dt>Product Knowledge</dt>
+                <dd>Providing accurate information about products and services.</dd>
+            </div>
 
-            <dt>Data Analysis</dt>
-            <dd>Analyzing customer and business data.</dd>
+            <div class="skill-card">
+                <div class="skill-icon-box"><i data-lucide="bar-chart-2"></i></div>
+                <dt>Data Analysis</dt>
+                <dd>Analyzing customer and business data.</dd>
+            </div>
 
-            <dt>Data Entry</dt>
-            <dd>Maintaining accurate business records.</dd>
+            <div class="skill-card">
+                <div class="skill-icon-box"><i data-lucide="keyboard"></i></div>
+                <dt>Data Entry</dt>
+                <dd>Maintaining accurate business records.</dd>
+            </div>
 
-            <dt>Market Analysis</dt>
-            <dd>Studying market trends to support decision making.</dd>
+            <div class="skill-card">
+                <div class="skill-icon-box"><i data-lucide="globe"></i></div>
+                <dt>Market Analysis</dt>
+                <dd>Studying market trends to support decision making.</dd>
+            </div>
 
-            <dt>Time Management</dt>
-            <dd>Completing work efficiently while meeting deadlines.</dd>
+            <div class="skill-card">
+                <div class="skill-icon-box"><i data-lucide="clock"></i></div>
+                <dt>Time Management</dt>
+                <dd>Completing work efficiently while meeting deadlines.</dd>
+            </div>
 
-            <dt>HTML5</dt>
-            <dd>Creating semantic and accessible web pages.</dd>
+            <div class="skill-card">
+                <div class="skill-icon-box"><i data-lucide="code-2"></i></div>
+                <dt>HTML5</dt>
+                <dd>Creating semantic and accessible web pages.</dd>
+            </div>
 
-            <dt>GitHub</dt>
-            <dd>Managing and publishing software projects.</dd>
+            <div class="skill-card">
+                <div class="skill-icon-box"><i data-lucide="github"></i></div>
+                <dt>GitHub</dt>
+                <dd>Managing and publishing software projects.</dd>
+            </div>
         </dl>
     </section>
 
-    <section id="experience">
-        <h2>Work Experience</h2>
+    <section id="experience" class="animate-on-scroll">
+        <div class="section-header">
+            <span class="section-tagline">My journey so far</span>
+            <h2>Work Experience</h2>
+        </div>
 
-        <p><strong>Sales and Customer Service Representative</strong></p>
-
-        <p>Online – Kathmandu, Nepal</p>
-
-        <p>June 2025 – November 2026</p>
-
-        <ul>
-            <li>Developed and maintained strong relationships with new and existing customers.</li>
-            <li>Resolved customer complaints efficiently to improve customer satisfaction.</li>
-            <li>Handled high-volume telephone calls and customer inquiries.</li>
-            <li>Followed up with customers to ensure service quality and gather feedback.</li>
-        </ul>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-icon"><i data-lucide="briefcase"></i></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">June 2025 – November 2026</span>
+                    <h3>Sales and Customer Service Representative</h3>
+                    <div class="timeline-meta">
+                        <span class="location"><i data-lucide="map-pin"></i> Online – Kathmandu, Nepal</span>
+                    </div>
+                    <ul class="experience-list">
+                        <li>Developed and maintained strong relationships with new and existing customers.</li>
+                        <li>Resolved customer complaints efficiently to improve customer satisfaction.</li>
+                        <li>Handled high-volume telephone calls and customer inquiries.</li>
+                        <li>Followed up with customers to ensure service quality and gather feedback.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="education">
-        <h2>Education</h2>
+    <section id="education" class="animate-on-scroll">
+        <div class="section-header">
+            <span class="section-tagline">Academic background</span>
+            <h2>Education</h2>
+        </div>
 
-        <p><strong>Bachelor in Information Technology (BIT)</strong></p>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-icon"><i data-lucide="graduation-cap"></i></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">Currently Studying</span>
+                    <h3>Bachelor in Information Technology (BIT)</h3>
+                    <div class="timeline-meta">
+                        <span class="institution"><i data-lucide="school"></i> Model Institute of Technology (MIT)</span>
+                    </div>
+                </div>
+            </div>
 
-        <p>Model Institute of Technology (MIT)</p>
-
-        <p>Currently Studying</p>
-
-        <p><strong>Certificate of Higher Education</strong></p>
-
-        <p>Galaxy Public School, Kathmandu</p>
-
-        <p>Graduated in 2024</p>
+            <div class="timeline-item">
+                <div class="timeline-icon"><i data-lucide="award"></i></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">Graduated in 2024</span>
+                    <h3>Certificate of Higher Education</h3>
+                    <div class="timeline-meta">
+                        <span class="institution"><i data-lucide="school"></i> Galaxy Public School, Kathmandu</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="projects">
+    <section id="projects" class="animate-on-scroll">
+        <div class="section-header">
+            <span class="section-tagline">Recent works</span>
+            <h2>Projects</h2>
+        </div>
 
-        <h2>Projects</h2>
+        <div class="projects-grid">
+            <article class="project-card">
+                <div class="project-header">
+                    <div class="project-icon"><i data-lucide="folder-git-2"></i></div>
+                    <h3>Personal Portfolio Website</h3>
+                </div>
+                <p>
+                    Developed a semantic HTML5 portfolio website to present personal
+                    information, education, skills, experience, and contact details.
+                </p>
+                <div class="project-footer">
+                    <a href="https://github.com/SANDESH420-jpg/sandesh-Personal-Portfolio.git" target="_blank" rel="noopener noreferrer" class="project-link">
+                        <span>GitHub Repository</span>
+                        <i data-lucide="arrow-up-right"></i>
+                    </a>
+                </div>
+            </article>
 
-        <article>
-
-            <h3>Personal Portfolio Website</h3>
-
-            <p>
-                Developed a semantic HTML5 portfolio website to present personal
-                information, education, skills, experience, and contact details.
-            </p>
-
-            <p>
-                GitHub Repository:
-                <a href="https://github.com/SANDESH420-jpg/sandesh-Personal-Portfolio.git">
-                    Personal Portfolio
-                </a>
-            </p>
-
-        </article>
-
-        <article>
-
-            <h3>Student Management System</h3>
-
-            <p>
-                Designed a student management application for storing and managing
-                student information, including record creation, updates, and deletion.
-            </p>
-
-            <p>
-                GitHub Repository:
-                <a href="https://github.com/yourusername/student-management-system">
-                    Student Management System
-                </a>
-            </p>
-
-        </article>
-
+            <article class="project-card">
+                <div class="project-header">
+                    <div class="project-icon"><i data-lucide="database"></i></div>
+                    <h3>Student Management System</h3>
+                </div>
+                <p>
+                    Designed a student management application for storing and managing
+                    student information, including record creation, updates, and deletion.
+                </p>
+                <div class="project-footer">
+                    <a href="https://github.com/yourusername/student-management-system" target="_blank" rel="noopener noreferrer" class="project-link">
+                        <span>GitHub Repository</span>
+                        <i data-lucide="arrow-up-right"></i>
+                    </a>
+                </div>
+            </article>
+        </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="animate-on-scroll">
+        <div class="section-header">
+            <span class="section-tagline">Get in touch</span>
+            <h2>Contact Me</h2>
+        </div>
 
-        <h2>Contact Me</h2>
+        <div class="contact-wrapper">
+            <div class="contact-info">
+                <h3>Let's collaborate</h3>
+                <p>Feel free to reach out. I am open to discussing new projects, creative ideas, or opportunities in software development.</p>
+                
+                <div class="contact-details">
+                    <div class="contact-detail-item">
+                        <div class="contact-detail-icon"><i data-lucide="mail"></i></div>
+                        <div>
+                            <span>Email</span>
+                            <a href="mailto:chaudharysandesh089@gmail.com">chaudharysandesh089@gmail.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-detail-item">
+                        <div class="contact-detail-icon"><i data-lucide="phone"></i></div>
+                        <div>
+                            <span>Phone</span>
+                            <a href="tel:+9779840087875">+977 9840087875</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-detail-item">
+                        <div class="contact-detail-icon"><i data-lucide="map-pin"></i></div>
+                        <div>
+                            <span>Location</span>
+                            <p>Kathmandu, Nepal</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-        <form action="#" method="post">
+            <form action="#" method="post" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Your Name">
+                </div>
 
-            <p>
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name" required>
-            </p>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="Your Email">
+                </div>
 
-            <p>
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" required>
-            </p>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6" required placeholder="How can I help you?"></textarea>
+                </div>
 
-            <p>
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="6" cols="40" required></textarea>
-            </p>
-
-            <p>
-                <button type="submit">Submit</button>
-            </p>
-
-        </form>
-
+                <button type="submit" class="btn btn-primary">
+                    <span>Submit</span>
+                    <i data-lucide="send"></i>
+                </button>
+            </form>
+        </div>
     </section>
 
 </main>
 
-<footer>
-
-    <p><strong>Sandesh Chaudhary</strong></p>
-
-    <p>Kathmandu, Nepal</p>
-
-    <p>Email: chaudharysandesh089@gmail.com</p>
-
-    <p>Phone: +977 9840087875</p>
-
-    <p>&copy; 2026 Sandesh Chaudhary. All Rights Reserved.</p>
-
+<footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-brand">
+            <h3>Sandesh Chaudhary</h3>
+            <p>BIT Student & Aspiring Software Developer</p>
+        </div>
+        <div class="footer-meta">
+            <p>&copy; 2026 Sandesh Chaudhary. All Rights Reserved.</p>
+        </div>
+    </div>
 </footer>
+
+<!-- Lucide Icons -->
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+    // Initialize icons
+    lucide.createIcons();
+
+    // Mobile nav toggle
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+    const menuIcon = document.getElementById('menu-icon');
+
+    menuToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+        if (navMenu.classList.contains('active')) {
+            menuIcon.setAttribute('data-lucide', 'x');
+        } else {
+            menuIcon.setAttribute('data-lucide', 'menu');
+        }
+        lucide.createIcons();
+    });
+
+    // Close menu when link is clicked
+    document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+            navMenu.classList.remove('active');
+            menuIcon.setAttribute('data-lucide', 'menu');
+            lucide.createIcons();
+        });
+    });
+
+    // Scroll animation effect
+    const animateElements = document.querySelectorAll('.animate-on-scroll');
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, {
+        threshold: 0.15
+    });
+
+    animateElements.forEach(el => observer.observe(el));
+</script>
 
 </body>
 </html>
